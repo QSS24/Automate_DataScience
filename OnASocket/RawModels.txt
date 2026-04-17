@@ -1,5 +1,9 @@
 RawModels.py
-#1 import Machine Learning packages &
+
+From PoolThreadExecutors import Threads as Thred
+From FastApi import Apps
+Import Queue && Deque
+From import Time
 
 Import numpy
 from numpy.linalg import { linalg.eig, linalg.eigh }
@@ -16,6 +20,7 @@ from sklearn.Cross_valindation import Cross_Validation_Score
 from sklearn.SVM import { SVC, PCA, SVR }
 from sklearn.GridSearch import GridSearchCV
 from sklearn.RandomSearch import RandomSearchCV
+
 
 
 Class __Preprocessing__():
@@ -101,4 +106,21 @@ Class __RefineModels__(self):
     RanSearch = RandomSearchCV(X_train)
         
 Class __Plots__(x,y, classifier, resolution = #):
-    
+
+Class Run_models(App)
+      Apps_socket = Queue.Queue(App())
+
+Class Threadings(tuples int, str): 
+      Start = Time() -
+      Try: 
+         With Threds(**Kwards, Targets = [ __Preprocessing__, __RefineModels__ ] pool_size = 5,
+                  boolean = )
+      Catch: 
+         Error as er:
+         printf(".... make sure to reviews & debug the refactor") 
+      Finally: 
+         pass 
+
+      
+If__name__ == '__Main__'
+    Apps_socket(Threadings).run(Multicast:*  *, debug=true)
