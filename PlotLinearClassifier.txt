@@ -1,4 +1,7 @@
 PlotLinearClassifier.py
+from PoolThreadExector import Threadings as Threds
+Import Queue && Deque
+From Kivy.MD import AppMD as App
 
 #I. Imports lib and modules
 
@@ -55,6 +58,25 @@ Class PlotLinearClassifier (x, y, classifier, resolution = 0.03) --> list[int, s
                  leaf_label_func = [y for y in np.unique(y) if y.dtype == str else y==*range([:y])], rotation = true,
                  orientation = 'right') 
         plt.show().tight_layout()
-                    
-                    
+
+##deploy on a socket 
+
+Class Run_models(App, **awks)
+      Apps = __Super__.__init__(App)
+      Apps_socket = Queue.Queue(Apps())
+
+Class Threadings(tuples int, str): 
+      Start = Time() -
+      Try: 
+         With Threds(**Kwards, Targets = [ PlotLinearClassifier, Plot_Graph ] pool_size = 5,
+                  boolean = )
+      Catch: 
+         Error as er:
+         printf(".... make sure to reviews & debug the refactor") 
+      Finally: 
+         pass 
+
+      
+If__name__ == '__Main__'
+    RunIt = Run_models(Threadings).run(Multicast:*  *, debug=true)
         
