@@ -1,0 +1,104 @@
+RawModels.py
+#1 import Machine Learning packages &
+
+Import numpy
+from numpy.linalg import { linalg.eig, linalg.eigh }
+from numpy.cov import numpy.cov 
+
+Import { time, tree }
+Import Decision_Tree
+
+from sklearn import { Kneighbors, preprocessing, datasets }
+from sklearn.preprocessing import { MinMaxScaler,NormalizeScaler, StandardScaler, imputer, Cluster, PolynomialsFeatures, LabelEncoder, Binarizer } 
+from sklearn.Model_Selection import { Linear_Regression, Logistic_Regression, Train_Test_Split }
+from sklearn.metrics import { Accuracy_Score MeanSquareError, MeanAbsoluteError, R2_Score }
+from sklearn.Cross_valindation import Cross_Validation_Score
+from sklearn.SVM import { SVC, PCA, SVR }
+from sklearn.GridSearch import GridSearchCV
+from sklearn.RandomSearch import RandomSearchCV
+
+
+Class __Preprocessing__():
+      
+    def TrainData():
+        Xfeatures = df()
+        YTargets = df.iloc[' ']
+        X_train, Y_train, X_test, Y_test = Train_Test_Split(x=' ', y='', test_size= 0.6, random_state = 0)
+    
+    NormlScaler = NormalizeScaler().fit_transform(X_train)
+    StdScaler = StandardScaler().fit_transorm(Y_train)
+    
+    ## Decompose dimension with PCA, LDA, RDA, QDA, FDA and RBF KPCA 
+    Class __DimensionReduction__()--> list[int, array, vector]:
+        def PCA(): 
+        PCA = PCA.fit_transform(x_train_pca, y_train)
+        eigenvecs, eigenvals = np.cov(x_train, y_train)
+        
+        def LDA():
+        
+        def RBF_KPCA():
+        
+        def RDA():
+        
+        def QDA():
+        
+        def FDA(): 
+        
+    Class __ModelSelection__(self, LineReg, LogReg, RandomForest):
+        pred = predict().fit(X_test)
+    
+        Class __LinearReg__():
+            LineReg:= Linear_Regression().fit(x_train)
+            x_test = LineReg.transform(x_test)
+        
+        def __SVM__():
+            SVC = SVC().fit_transform(x_train)
+            PCA = svc.pca().fit_transform()
+            
+        def __SVR__():
+            SVR = SVR().fit_transorm(X_train)
+            
+        
+        def __LogReg__():
+            Logit = LogisticRegression().fit_transform(x_train)
+
+Class __SupervisedLearning__():
+     
+Class __UnsupervisedLearning__():
+     KNN = Neighbors.KNeighborsNearest(k_neighbors = ' ',)
+     Kmeans = K_means
+     
+Class __Determinant__():
+    
+    
+Class __ModelEvaluation__(self, MAE, MSE) --> list[int, arr, float]:
+    def __MAE__(self):
+        MAE = Mean_Absolute_Error(X_train)
+        pred = MAE.predict(x_test)
+        
+    def __MSE__(self):
+        MSE = Mean_Square_Error(X_train)
+        pred = MSE.Predict(X_test)
+        
+    def __R2Score__(self):
+        R2score = R2_score(X_train)
+        
+    Def __UnsupervisedTrain__(self):
+    While:
+        @UnsupervisedTrain.wraps()
+        KNN = Neighbors.Kneighbors(k=#)
+    
+    
+    
+    Def __SupervisedTrain__(self):
+    While:
+        @SupervisedTrain.wraps()
+        LR = Linear_Regression()
+        MLR = Multiple_Regression()
+        
+Class __RefineModels__(self): 
+    Grid = GridSearchCV(X_train)
+    RanSearch = RandomSearchCV(X_train)
+        
+Class __Plots__(x,y, classifier, resolution = #):
+    
